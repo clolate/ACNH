@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <link rel="icon" href="data:," />
+    <title>ACNH info</title>
+    <link rel="stylesheet" href="style2.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="body">
+      <img
+        class="logo"
+        src="images/Animal_Crossing_New_Horizons_(Logo).webp"
+        alt="Animal_Crossing_New_Horizons_Title"
+      />
+
+      <div id="fish">
+        <h2>Disponibilidad de peces</h2>
+        <div id="dropdowns">
+          <label for="filter">Ordenar por:</label>
+          <select name="filter" id="filter" onchange="sortFishes()">
+            <option value="name">Nombre</option>
+            <option value="price">Precio</option>
+            <option value="location">Ubicación</option>
+          </select>
+
+          <label for="month">Mes:</label>
+          <select name="month" id="month" onchange="changeMonth()">
+            <option value="Jan">Enero</option>
+            <option value="Feb">Febrero</option>
+            <option value="Mar">Marzo</option>
+            <option value="Apr">Abril</option>
+            <option value="May">Mayo</option>
+            <option value="Jun">Junio</option>
+            <option value="Jul">Julio</option>
+            <option value="Aug">Agosto</option>
+            <option value="Sep">Septiembre</option>
+            <option value="Oct">Octubre</option>
+            <option value="Nov">Noviembre</option>
+            <option value="Dec">Diciembre</option>
+          </select>
+        </div>
+
+        <div id="div1">
+          <div id="tooltip"></div>
+        </div>
+      </div>
+
+      <div id="villagers">
+        <h2>Popularidad vecinos</h2>
+
+        <div>
+          <div id="div2">
+            <div id="tooltip2"></div>
+          </div>
+        </div>
+
+        <p>
+          Según la última consulta al sitio
+          <a
+            href="https://www.animalcrossingportal.com/games/new-horizons/guides/villager-popularity-list.php#/"
+            >Villager Popularity Tier List</a
+          >
+          parece no haber relación.
+        </p>
+        <img
+          class="logo"
+          src="images/toptier.png"
+          alt="top tier ACNH dic2020"
+        />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+  </body>
+</html>

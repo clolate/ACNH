@@ -1,0 +1,147 @@
+body {
+  font-family: "Verdana";
+  padding: 1em;
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: rgb(255, 255, 255);
+  background-image: url("images/cloud.jpg");
+  background-size: 200px;
+  letter-spacing: 0.02071em;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+#body {
+  background-color: rgba(240, 255, 255, 0.89);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.167;
+  color: rgb(121, 26, 26);
+}
+
+h2 {
+  margin: 1em 0 16px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.235;
+  color: rgb(255, 209, 59);
+  font-family: "Itim", cursive;
+  text-shadow: 2px 2px rgb(124, 107, 10);
+}
+
+h3 {
+  margin: 16px 0 16px;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.334;
+  font-family: "Itim", cursive;
+  text-shadow: 1px 1px rgb(32, 90, 40);
+}
+
+hr {
+  background-color: rgba(255, 255, 255, 0.12);
+  height: 1px;
+  border: none;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  padding-left: 10;
+}
+
+li {
+  list-style-type: none;
+}
+
+#abs-datos ul.atributo > li {
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.65em;
+  font-family: "Courier New", "Courier", monospace;
+}
+
+#abs-datos ul > div li {
+  margin-left: 16.6px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+#abs-datos ul > div li::before {
+  right: calc(100% + 3px);
+  top: 0.75em;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 165, 138, 0);
+  border-left-color: #1a500fe3;
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+#abs-datos ul > div p {
+  margin-bottom: 0;
+}
+
+.box {
+  margin: 0 2em 1.75em;
+  border-radius: 7px;
+  background-color: #9affa7ab;
+  box-shadow: 2px 2px 10px 0px rgba(102, 102, 102, 0.25);
+  padding: 0.5em 1.5em;
+}
+
+.box > h3 {
+  padding-bottom: 0.5em;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(2, 49, 13, 0.25);
+  color: rgb(104, 26, 75);
+}
+
+#abs-datos .box {
+  padding: 1.25em 1.5em;
+}
+
+#parte1,
+#abs-datos,
+#parte3 {
+  margin-bottom: 3em;
+}
+
+#fish {
+  margin-top: 2em;
+  margin-bottom: 100px;
+  padding: 0%;
+}
+.fish text {
+  font-size: 14px;
+}
+#dropdowns {
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  width: max-content;
+}
