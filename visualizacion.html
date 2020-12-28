@@ -25,27 +25,31 @@
         <h2>Disponibilidad de peces</h2>
         <div id="dropdowns">
           <label for="filter">Ordenar por:</label>
-          <select name="filter" id="filter" onchange="sortFishes()">
-            <option value="name">Nombre</option>
-            <option value="price">Precio</option>
-            <option value="location">Ubicación</option>
-          </select>
-
-          <label for="month">Mes:</label>
-          <select name="month" id="month" onchange="changeMonth()">
-            <option value="Jan">Enero</option>
-            <option value="Feb">Febrero</option>
-            <option value="Mar">Marzo</option>
-            <option value="Apr">Abril</option>
-            <option value="May">Mayo</option>
-            <option value="Jun">Junio</option>
-            <option value="Jul">Julio</option>
-            <option value="Aug">Agosto</option>
-            <option value="Sep">Septiembre</option>
-            <option value="Oct">Octubre</option>
-            <option value="Nov">Noviembre</option>
-            <option value="Dec">Diciembre</option>
-          </select>
+          <div class="dropd">
+            <select name="filter" id="filter" onchange="sortFishes()">
+              <option value="name">Nombre</option>
+              <option value="price">Precio</option>
+              <option value="location">Ubicación</option>
+            </select>
+            <span></span>
+          </div>
+          <label for="month" style="margin-left: 35px;">Mes:</label>
+          <div class="dropd">
+            <select name="month" id="month" onchange="changeMonth()">
+              <option value="Jan">Enero</option>
+              <option value="Feb">Febrero</option>
+              <option value="Mar">Marzo</option>
+              <option value="Apr">Abril</option>
+              <option value="May">Mayo</option>
+              <option value="Jun">Junio</option>
+              <option value="Jul">Julio</option>
+              <option value="Aug">Agosto</option>
+              <option value="Sep">Septiembre</option>
+              <option value="Oct">Octubre</option>
+              <option value="Nov">Noviembre</option>
+              <option value="Dec">Diciembre</option>
+              </select><span></span>
+          </div>
         </div>
 
         <div id="div1">

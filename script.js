@@ -237,17 +237,34 @@ const readCsv = async () => {
           .style("box-shadow", "0 0 10px rgba(0,0,0,.25)")
           .style("padding", "10px")
           .style("line-height", "1.3")
-          .style("font", "11px sans-serif");
+          .style("font", "11px sans-serif")
+          .style("display","flex")
+          .style("justify-content", "space-between")
+          .style("align-items", "center");
       };
 
       const getTooltipContent = (d) => {
-        return `<b>${d.name}</b>
+        // https://stackoverflow.com/questions/32589197/how-can-i-capitalize-the-first-letter-of-each-word-in-a-string-using-javascript
+        function titleCase(str) {
+          var splitStr = str.toLowerCase().split(' ');
+          for (var i = 0; i < splitStr.length; i++) {
+              // You do not need to check if i is larger than splitStr length, as your for does that for you
+              // Assign it back to the array
+              splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+          }
+          // Directly return the joined string
+          return splitStr.join(' '); 
+       }
+        var src = "fish/"+titleCase(d.name).replace(/\s/g, "_")+"_NH_Icon.png"
+        return `<div style="margin-right:10px">
+    <img src="${src}" alt="${d.name}"></div>
+    <div><b>${d.name}</b>
     <br/>
     Price: <b>${d.price}B</b>
     <br/>
     Location: <b style="color:${d.color.darker()}">${d.where}</b>
     <br/>
-    Rain/Snow: <b>${d.rainsnow}</b>
+    Rain/Snow: <b>${d.rainsnow}</b></div>
     `;
       };
 
