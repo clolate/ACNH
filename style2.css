@@ -171,7 +171,7 @@ li {
   right: 10px;
   width: 8px;
   height: 8px;
-  background: url(http://projects.authenticstyle.co.uk/niceselect/arrow.png)
+  background: url("images/arrow.png")
     no-repeat;
   top: 50%;
   margin-top: -4px;
