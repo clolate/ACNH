@@ -187,3 +187,14 @@ li {
   cursor: pointer;
   padding: 7px 10px;
 }
+.column {
+  float: left;
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
