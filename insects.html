@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <link rel="icon" href="data:," />
+    <title>ACNH info insectos</title>
+    <link rel="stylesheet" href="style2.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="body">
+      <img
+        class="logo"
+        src="images/Animal_Crossing_New_Horizons_(Logo).webp"
+        alt="Animal_Crossing_New_Horizons_Title"
+      />
+      <a href="./index.html">Volver</a>
+      <div id="insect">
+        <h2>Disponibilidad de insectos</h2>
+        <br />
+
+        <p>
+          A continuación puedes visualizar los insectos disponibles en Animal
+          Crossing: New Horizons. Puedes ordenar por nombre, precio y ubicación;
+          y seleccionar el mes que quieres ver su disponibilidad. Si el pez que
+          buscas no tiene un horario designado es porque no esta disponible ese
+          mes.
+        </p>
+
+        <div id="dropdowns">
+          <label for="filter">Ordenar por:</label>
+          <div class="dropd">
+            <select name="filter" id="filter" onchange="sortInsects()">
+              <option value="name">Nombre</option>
+              <option value="price">Precio</option>
+              <option value="location">Ubicación</option>
+            </select>
+            <span></span>
+          </div>
+          <label for="month" style="margin-left: 35px">Mes:</label>
+          <div class="dropd">
+            <select name="month" id="month" onchange="changeMonth()">
+              <option value="Jan">Enero</option>
+              <option value="Feb">Febrero</option>
+              <option value="Mar">Marzo</option>
+              <option value="Apr">Abril</option>
+              <option value="May">Mayo</option>
+              <option value="Jun">Junio</option>
+              <option value="Jul">Julio</option>
+              <option value="Aug">Agosto</option>
+              <option value="Sep">Septiembre</option>
+              <option value="Oct">Octubre</option>
+              <option value="Nov">Noviembre</option>
+              <option value="Dec">Diciembre</option></select
+            ><span></span>
+          </div>
+        </div>
+
+        <div id="div1">
+          <div id="tooltip"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script3.js"></script>
+  </body>
+</html>
