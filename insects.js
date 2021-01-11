@@ -255,7 +255,7 @@ const readCsv = async () => {
           // Directly return the joined string
           return splitStr.join(' '); 
        }
-        var src = "insect/"+titleCase(d.name).replace(/\s/g, "_")+"_NH_Icon.png"
+        var src = "images/insects/"+titleCase(d.name).replace(/\s/g, "_")+"_ACNH.webp"
         return `<div style="margin-right:10px">
     <img src="${src}" alt="${d.name}"></div>
     <div><b>${d.name}</b>
